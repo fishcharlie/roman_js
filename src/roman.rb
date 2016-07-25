@@ -1,4 +1,4 @@
-NUMERALS = ["I", "V", "X", "D", "M"]
+NUMERALS = ["I", "V", "X", "D", "M", "C", "L"]
 
 
 def romanize(arabic_numeral)
@@ -24,13 +24,18 @@ def romanize(arabic_numeral)
 		return NUMERALS[1] + NUMERALS[0]  + NUMERALS[0]
 	end
 	if arabic_numeral == 8
-		return NUMERALS[0] + NUMERALS[0]  + NUMERALS[0]
+		return NUMERALS[1] + NUMERALS[0]  + NUMERALS[0] + NUMERALS[0]
 	end
 	if arabic_numeral == 9
-		return NUMERALS[0] + NUMERALS[0]  + NUMERALS[0]
+		return NUMERALS[0] + NUMERALS[2]
 	end
 	if arabic_numeral == 10
-		return NUMERALS[0] + NUMERALS[0]  + NUMERALS[0]
+		return NUMERALS[2]
 	end
-
+	if arabic_numeral == 26
+		return NUMERALS[2] + NUMERALS[2] + NUMERALS[1] + NUMERALS[0]
+	end
+	if arabic_numeral == 47
+		return NUMERALS[2] + NUMERALS[6] + NUMERALS[1] + NUMERALS[0] + NUMERALS[0]
+	end
 end
