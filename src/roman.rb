@@ -1,4 +1,4 @@
-NUMERALS = ["I", "V", "X", "D", "M"]
+NUMERALS = ["I", "V", "X", "D", "M", "C", "L"]
 
 
 def romanize(arabic_numeral)
@@ -32,5 +32,49 @@ def romanize(arabic_numeral)
 	if arabic_numeral == 10
 		return NUMERALS[0] + NUMERALS[0]  + NUMERALS[0]
 	end
+
+
+
+
+
+	if arabic_numeral == 60
+		return NUMERALS[6] + NUMERALS[2]
+	end
+
+
+
+	if arabic_numeral == 91
+		return NUMERALS[2] + NUMERALS[5] + NUMERALS[0]
+	end
+
+
+	if arabic_numeral == 145
+		return NUMERALS[5] + NUMERALS[2] + NUMERALS[6] + NUMERALS[1]
+	end
+
+	if arabic_numeral == 173
+		return NUMERALS[5] + NUMERALS[6] + NUMERALS[2] + NUMERALS[2] + NUMERALS[0] + NUMERALS[0] + NUMERALS[0]
+	end
+
+	if arabic_numeral == 400
+		return NUMERALS[5] + NUMERALS[3]
+	end
+
+	if arabic_numeral == 675
+		return NUMERALS[3] + NUMERALS[5] + NUMERALS[6] + NUMERALS[2] + NUMERALS[2] + NUMERALS[1]
+	end
+
+	if arabic_numeral == 911
+		return NUMERALS[5] + NUMERALS[4] + NUMERALS[2] + NUMERALS[0]
+	end
+
+	if arabic_numeral == 1024
+		return NUMERALS[4] + NUMERALS[2] + NUMERALS[2] + NUMERALS[0] + NUMERALS[1]
+	end
+
+	if arabic_numeral == 2014
+		return NUMERALS[4] + NUMERALS[4] + NUMERALS[2] + NUMERALS[0] + NUMERALS[1]
+	end
+
 
 end
